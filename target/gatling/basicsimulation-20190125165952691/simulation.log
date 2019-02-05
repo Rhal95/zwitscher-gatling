@@ -1,4 +1,0 @@
-RUN	de.qaware.cloud.nativ.zwitscher.gatling.BasicSimulation	basicsimulation	1548435592691	 	3.0.3
-USER	BasicSimulation	1	START	1548435594219	1548435594219
-REQUEST	1		request_1	1548435594247	1548435596638	OK	 
-USER	BasicSimulation	1	END	1548435594219	1548435601670
