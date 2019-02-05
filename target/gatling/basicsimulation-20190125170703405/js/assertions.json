@@ -1,0 +1,10 @@
+{
+  "simulation": "de.qaware.cloud.nativ.zwitscher.gatling.BasicSimulation",
+  "simulationId": "basicsimulation",
+  "start": 1548436023405,
+  "description": "",
+  "scenarios": ["BasicSimulation"],
+  "assertions": [
+
+  ]
+}

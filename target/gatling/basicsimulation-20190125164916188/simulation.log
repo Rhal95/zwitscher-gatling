@@ -1,0 +1,4 @@
+RUN	de.qaware.cloud.nativ.zwitscher.gatling.BasicSimulation	basicsimulation	1548434956188	 	3.0.3
+USER	BasicSimulation	1	START	1548434957605	1548434957605
+REQUEST	1		request_1	1548434957631	1548434958649	KO	i.n.c.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:8081
+USER	BasicSimulation	1	END	1548434957605	1548434963699
