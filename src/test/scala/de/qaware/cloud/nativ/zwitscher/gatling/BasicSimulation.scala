@@ -38,8 +38,8 @@ class BasicSimulation extends Simulation {
       .exec(requestTweets)
       .pause(mediumDuration)
 
-  setUp(scn1.inject(rampConcurrentUsers(1).to(2500).during(longDuration)),
-    scn2.inject(rampConcurrentUsers(1).to(2500).during(longDuration)))
+  setUp(scn1.inject(rampConcurrentUsers(1).to(5000).during(longDuration)),
+    scn2.inject(rampConcurrentUsers(1).to(5000).during(longDuration)))
     .protocols(httpProtocol)
 
 }
