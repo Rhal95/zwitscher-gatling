@@ -18,8 +18,8 @@ class BasicSimulation extends Simulation {
   private val requestTweets = http("requestTweets")
     .get("/search?q=test")
 
-  private val shortDuration = Duration.create(5, "s")
-  private val mediumDuration = Duration.create(30, "s")
+  private val shortDuration = Duration.create(100, "ms")
+  private val mediumDuration = Duration.create(500, "ms")
   private val longDuration = Duration.create(5, "minutes")
 
   //opening webpage, wait, reload page
@@ -38,8 +38,8 @@ class BasicSimulation extends Simulation {
       .exec(requestTweets)
       .pause(mediumDuration)
 
-  setUp(scn1.inject(rampConcurrentUsers(1).to(5000).during(longDuration)),
-    scn2.inject(rampConcurrentUsers(1).to(5000).during(longDuration)))
+  setUp(scn1.inject(rampConcurrentUsers(1).to(300).during(longDuration)),
+    scn2.inject(rampConcurrentUsers(1).to(300).during(longDuration)))
     .protocols(httpProtocol)
 
 }
